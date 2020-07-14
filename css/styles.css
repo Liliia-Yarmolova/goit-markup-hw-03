@@ -29,7 +29,9 @@ body {
   letter-spacing: 0.03em;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   margin: 0;
 }
 
@@ -445,13 +447,10 @@ img {
 
 .our-projects-list-item {
   display: block;
-  /* width: calc((100% - 60px) / 3); */
-  width: 370px;
+  width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-  padding-bottom: 20px;
   background: #ffffff;
-  border: 1px solid #eeeeee;
 }
 
 .our-projects-list-item:nth-child(3n) {
@@ -462,9 +461,14 @@ img {
   margin-bottom: 0;
 }
 
-.our-projects-list-item img {
-  margin-bottom: 20px;
-  border-style: none;
+.our-projects-list-item-details {
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  padding-right: 24px;
 }
 
 .our-projects-list-item .subtitle {
@@ -474,16 +478,11 @@ img {
   text-transform: capitalize;
   color: var(--title-color);
   margin-bottom: 4px;
-  padding-left: 24px;
-  padding-right: 24px;
 }
 
 .our-projects-list-item .description {
   font-size: 16px;
   line-height: 1.875;
-  /* margin-bottom: 20px; */
-  padding-left: 24px;
-  padding-right: 24px;
 }
 
 .text {
